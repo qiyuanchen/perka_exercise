@@ -49,17 +49,19 @@ public class databasehelper extends OrmLiteSqliteOpenHelper {
     }
     @Override
     public void onUpgrade(SQLiteDatabase database, ConnectionSource connectionSource, int oldVersion, int newVersion){
-
+        // codes to update db if necessary
     }
 
     // required default constructor
     private databasehelper(Context context){
         super(context,DATA_BASE_FILE_NAME,null,dbversion);
     }
+
+    //returns class db
     public Dao<countList,Integer> getcountListDao() throws SQLException{
         return getDao(countList.class);
     }
-    public Dao<count,Integer> getcounDao() throws SQLException{
+    public Dao<count,Integer> getcountDao() throws SQLException{
         return getDao(count.class);
     }
 

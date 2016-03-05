@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:paddingLeft="40dp"
+    android:weightSum="10"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter Name"
+            android:textSize="17sp"
+            android:id="@+id/counter_name"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/count_num"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1.5"
+        android:background="@android:drawable/ic_media_play"
+        android:layout_gravity="center_vertical"
+        android:scaleX="-1"
+        android:id="@+id/sub"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1.5"
+        android:background="@android:drawable/ic_media_play"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/add"
+
+        />
+
+
 
 
 </LinearLayout>
